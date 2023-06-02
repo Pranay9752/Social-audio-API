@@ -2,7 +2,7 @@
 
 This is a Django REST Framework API project that provides various endpoints for managing users, authentication, registration, songs, albums, podcasts, playlists, and social interactions. Below is a detailed explanation of each endpoint:
 
-# Admin Endpoints
+## Admin Endpoints
 
 /admin/password/reset/ - Endpoint for resetting a user's password.
 
@@ -16,19 +16,19 @@ This is a Django REST Framework API project that provides various endpoints for 
 
 /admin/password/change/ - Endpoint for changing user password.
 
-# Registration Endpoints
+## Registration Endpoints
 
 /registration/account-confirm-email/(?P<key>.+)/ - Endpoint for confirming the user's email address.
 
 /registration/register/ - Endpoint for user registration.
 
-# Authentication Endpoints
+## Authentication Endpoints
 
 /auth/login/ - Endpoint for user login.
 
 /auth/logout/ - Endpoint for user logout.
 
-# User Endpoints
+## User Endpoints
 
 /user/followers/ - Endpoint for retrieving the followers of a user.
 
@@ -40,7 +40,7 @@ This is a Django REST Framework API project that provides various endpoints for 
 
 /user/profile/ - Endpoint for retrieving the profile of the authenticated user.
 
-# Song Endpoints
+## Song Endpoints
 
 /song/ - Endpoint for creating a new song.
 
@@ -50,7 +50,7 @@ This is a Django REST Framework API project that provides various endpoints for 
 
 /songs/(?P<pk>.+)/ - Endpoint for retrieving, updating, or deleting a specific song by its primary key.
 
-# Album Endpoints
+## Album Endpoints
 
 /album/ - Endpoint for creating a new album.
 
@@ -62,7 +62,7 @@ This is a Django REST Framework API project that provides various endpoints for 
 
 /album/songentry/ - Endpoint for adding a song to an album.
 
-# Podcast Endpoints
+## Podcast Endpoints
 
 /podcast/all/ - Endpoint for retrieving the list of all podcasts.
 
@@ -70,7 +70,7 @@ This is a Django REST Framework API project that provides various endpoints for 
 
 /podcast/(?P<pk>.+)/ - Endpoint for retrieving a specific podcast by its primary key.
 
-# Playlist Endpoints
+## Playlist Endpoints
 
 /playlists/all/ - Endpoint for retrieving the list of all playlists.
 
@@ -78,22 +78,22 @@ This is a Django REST Framework API project that provides various endpoints for 
 
 /playlist/(?P<pk>.+)/ - Endpoint for retrieving a specific playlist by its primary key.
 
-# Social Interactions Endpoints
+## Social Interactions Endpoints
 
 /(?P<user__username>[\w-]+)/followers/ - Endpoint for retrieving the followers of a specific user.
 
 /(?P<user__username>[\w-]+)/following/ - Endpoint for retrieving the users followed by a specific user.
 
-# Home Endpoints
+## Home Endpoints
 
 /home/feed/ - Endpoint for retrieving the home feed.
 
-#Trending Endpoint
+## Trending Endpoint
 
 /trending/ - Endpoint for retrieving the trending content.
 
-# Stories Endpoints
+## Stories Endpoints
 
 /stories/create/ - Endpoint for creating a new story.
 
-/(?P<user__username>[\w-]+)/stories/(?P<pk>\d+)/ - Endpoint for retrieving, updating, or deleting a specific story by its primary key
+`/(?P<user__username>[\w-]+)/stories/(?P<pk>\d+)/` - Endpoint for retrieving, updating, or deleting a specific story by its primary key
